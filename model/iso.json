@@ -1,0 +1,97 @@
+{
+    "app": "Iso",
+    "name": "iso",
+    "namespace": "Nemundo\\Iso",
+    "is_deleted": false,
+    "model": [
+        {
+            "template": "default",
+            "model_id": "eab11b95-069d-4eed-b959-6f76a408189c",
+            "label": "Country",
+            "class_name": "Country",
+            "table_name": "iso_country",
+            "namespace": "Nemundo\\Iso\\Data\\Country",
+            "row_class_name": "",
+            "primary_index": "auto_increment",
+            "is_deleted": false,
+            "type": [
+                {
+                    "type": "text",
+                    "label": "Code",
+                    "field_name": "code",
+                    "variable_name": "code",
+                    "allow_null": false,
+                    "is_deleted": false,
+                    "length": "10"
+                },
+                {
+                    "type": "text",
+                    "label": "Country",
+                    "field_name": "country",
+                    "variable_name": "country",
+                    "allow_null": false,
+                    "is_deleted": false,
+                    "length": "255"
+                }
+            ],
+            "index": [
+                {
+                    "index_name": "code",
+                    "index_type": "unique_index",
+                    "field_name": [
+                        "code"
+                    ]
+                }
+            ]
+        },
+        {
+            "template": "default",
+            "model_id": "f3884245-4fb1-48cd-bfaa-7798b75840fa",
+            "label": "Region",
+            "class_name": "Region",
+            "table_name": "iso_region",
+            "namespace": "Nemundo\\Iso\\Data\\Region",
+            "row_class_name": "",
+            "primary_index": "auto_increment",
+            "is_deleted": false,
+            "type": [
+                {
+                    "type": "external",
+                    "label": "Country",
+                    "field_name": "country",
+                    "variable_name": "country",
+                    "allow_null": false,
+                    "is_deleted": false,
+                    "external_model_id": "eab11b95-069d-4eed-b959-6f76a408189c"
+                },
+                {
+                    "type": "text",
+                    "label": "Code",
+                    "field_name": "code",
+                    "variable_name": "code",
+                    "allow_null": false,
+                    "is_deleted": false,
+                    "length": "10"
+                },
+                {
+                    "type": "text",
+                    "label": "Region",
+                    "field_name": "region",
+                    "variable_name": "region",
+                    "allow_null": false,
+                    "is_deleted": false,
+                    "length": "255"
+                }
+            ],
+            "index": [
+                {
+                    "index_name": "code",
+                    "index_type": "unique_index",
+                    "field_name": [
+                        "code"
+                    ]
+                }
+            ]
+        }
+    ]
+}
