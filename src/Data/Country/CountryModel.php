@@ -54,5 +54,9 @@ $index = new \Nemundo\Model\Definition\Index\ModelUniqueIndex($this);
 $index->indexName = "code";
 $index->addType($this->code);
 
+$index = new \Nemundo\Model\Definition\Index\ModelIndex($this);
+$index->indexName = "country";
+$index->addType($this->country);
+
 }
 }

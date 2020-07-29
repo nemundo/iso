@@ -41,6 +41,13 @@
                     "field_name": [
                         "code"
                     ]
+                },
+                {
+                    "index_name": "country",
+                    "index_type": "index",
+                    "field_name": [
+                        "country"
+                    ]
                 }
             ]
         },
@@ -89,6 +96,14 @@
                     "index_type": "unique_index",
                     "field_name": [
                         "code"
+                    ]
+                },
+                {
+                    "index_name": "country",
+                    "index_type": "index",
+                    "field_name": [
+                        "country",
+                        "region"
                     ]
                 }
             ]
