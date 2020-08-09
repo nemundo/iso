@@ -14,6 +14,11 @@ $lib->namespace = 'Nemundo\\Iso';
 ```
 
 
+### Remove Submodule
+```
+git submodule deinit lib/iso
+git rm lib/iso
+```
 
 
 
