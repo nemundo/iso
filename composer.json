@@ -1,6 +1,7 @@
 {
     "name": "nemundo/iso",
     "description": "Iso Country",
+    "license": "MIT",
     "authors": [
         {
             "name": "Urs Lang",
