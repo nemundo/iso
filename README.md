@@ -1,5 +1,10 @@
-# iso
+# Iso Country
 
+
+### Composer Installation
+```
+composer require nemundo/iso
+```
 
 
 ### Dev Installation
@@ -23,4 +28,12 @@ git rm lib/iso
 
 
 ### Source
+
+
+
+### Import
+```
+bin/cmd.php iso-import
+
+```
 
