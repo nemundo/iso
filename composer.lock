@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "186b8592f1089b7b2376c179edd817f6",
+    "content-hash": "c455aa02bd614110f41b620a56006ed1",
     "packages": [
         {
             "name": "nemundo/core",

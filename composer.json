@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "nemundo/framework": "^0.37.0"
+        "nemundo/framework": "*"
     },
     "autoload": {
         "psr-4": {

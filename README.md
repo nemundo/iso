@@ -1,10 +1,17 @@
 # Iso Country
 
-
 ### Composer Installation
 ```
 composer require nemundo/iso
 ```
+
+### Admin Installation
+```
+(new \Nemundo\App\ModelDesigner\ModelDesignerConfig())->addProject(new \Nemundo\Iso\IsoProject());
+```
+
+
+
 
 
 ### Dev Installation
@@ -27,6 +34,8 @@ git rm lib/iso
 
 
 
+
+
 ### Source
 
 
@@ -34,6 +43,5 @@ git rm lib/iso
 ### Import
 ```
 bin/cmd.php iso-import
-
 ```
 
