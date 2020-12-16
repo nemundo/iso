@@ -64,7 +64,6 @@ class IsoImportScript extends AbstractConsoleScript
 
             $countryId = $country->getCountryId($csvRow->getValue('country_code'));
 
-
             $data = new Region();
             $data->updateOnDuplicate = true;
             $data->countryId = $countryId;
@@ -72,9 +71,7 @@ class IsoImportScript extends AbstractConsoleScript
             $data->code = $csvRow->getValue('code');
             $data->save();
 
-
         }
-
 
     }
 
