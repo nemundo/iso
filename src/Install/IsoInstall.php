@@ -26,8 +26,8 @@ class IsoInstall extends AbstractInstall
         (new ScriptSetup())
             ->addScript(new IsoImportScript());
 
-        (new JobSetup())
-            ->addJob(new IsoImportJob());
+        /*(new JobSetup())
+            ->addJob(new IsoImportJob());*/
 
     }
 }
