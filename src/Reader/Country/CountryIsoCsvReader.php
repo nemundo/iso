@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Nemundo\Iso\Reader;
+namespace Nemundo\Iso\Reader\Country;
 
 
 use Nemundo\Core\Base\DataSource\AbstractDataSource;
