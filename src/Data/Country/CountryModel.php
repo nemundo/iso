@@ -12,7 +12,7 @@ public $id;
 public $code;
 
 /**
-* @var \Nemundo\Model\Type\Text\TextType
+* @var \Nemundo\Model\Type\Text\TranslationTextType
 */
 public $country;
 
@@ -42,21 +42,17 @@ $this->code->label = "Code";
 $this->code->allowNullValue = false;
 $this->code->length = 10;
 
-$this->country = new \Nemundo\Model\Type\Text\TextType($this);
+$this->country = new \Nemundo\Model\Type\Text\TranslationTextType($this);
 $this->country->tableName = "iso_country";
 $this->country->fieldName = "country";
 $this->country->aliasFieldName = "iso_country_country";
 $this->country->label = "Country";
-$this->country->allowNullValue = false;
+$this->country->allowNullValue = true;
 $this->country->length = 255;
 
 $index = new \Nemundo\Model\Definition\Index\ModelUniqueIndex($this);
 $index->indexName = "code";
 $index->addType($this->code);
-
-$index = new \Nemundo\Model\Definition\Index\ModelIndex($this);
-$index->indexName = "country";
-$index->addType($this->country);
 
 }
 }

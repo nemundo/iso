@@ -30,8 +30,17 @@
                     "field_name": "country",
                     "variable_name": "country",
                     "allow_null": false,
-                    "is_deleted": false,
+                    "is_deleted": true,
                     "length": "255"
+                },
+                {
+                    "type": "translation_text",
+                    "label": "Country",
+                    "field_name": "country",
+                    "variable_name": "country",
+                    "allow_null": true,
+                    "is_deleted": false,
+                    "length": 255
                 }
             ],
             "index": [
@@ -40,13 +49,6 @@
                     "index_type": "unique_index",
                     "field_name": [
                         "code"
-                    ]
-                },
-                {
-                    "index_name": "country",
-                    "index_type": "index",
-                    "field_name": [
-                        "country"
                     ]
                 }
             ]

@@ -11,6 +11,8 @@ use Nemundo\Core\Path\Path;
 use Nemundo\Iso\Data\Country\Country;
 use Nemundo\Iso\Data\Region\Region;
 use Nemundo\Iso\Directory\CountryDirectory;
+use Nemundo\Iso\Import\CountryImport;
+use Nemundo\Iso\Install\IsoInstall;
 use Nemundo\Iso\IsoProject;
 
 class IsoImportScript extends AbstractConsoleScript
@@ -26,6 +28,15 @@ class IsoImportScript extends AbstractConsoleScript
     public function run()
     {
 
+
+
+        (new IsoInstall())->install();
+
+        (new CountryImport())->importCountry();
+
+
+
+        /*
 
         $reader = new CsvReader();
         $reader->separator = CsvSeperator::COMMA;
@@ -71,7 +82,7 @@ class IsoImportScript extends AbstractConsoleScript
             $data->code = $csvRow->getValue('code');
             $data->save();
 
-        }
+        }*/
 
     }
 

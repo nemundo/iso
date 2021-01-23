@@ -6,13 +6,13 @@ namespace Nemundo\Iso\Reader;
 
 use Nemundo\Core\Base\AbstractBase;
 
-class ProvinceItem extends AbstractBase
+class SubdivisonItem extends AbstractBase
 {
 
     public $countryCode;
 
-    public $provinceCode;
+    public $code;
 
-    public $province;
+    public $subdivision;
 
 }
