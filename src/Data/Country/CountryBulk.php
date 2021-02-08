@@ -1,5 +1,7 @@
 <?php
 namespace Nemundo\Iso\Data\Country;
+use Nemundo\Core\Language\LanguageConfig;
+use Nemundo\Model\Type\Text\TextType;
 class CountryBulk extends \Nemundo\Model\Data\AbstractModelDataBulk {
 /**
 * @var CountryModel
@@ -12,7 +14,7 @@ protected $model;
 public $code;
 
 /**
-* @var string
+* @var string[]
 */
 public $country;
 
@@ -22,7 +24,13 @@ $this->model = new CountryModel();
 }
 public function save() {
 $this->typeValueList->setModelValue($this->model->code, $this->code);
-$this->typeValueList->setModelValue($this->model->country, $this->country);
+foreach (LanguageConfig::$languageList as $language) {
+if (isset($this->country[$language])) {
+$type = new TextType();
+$type->fieldName = $this->model->country->fieldName."_" . $language;
+$this->typeValueList->setModelValue($type, $this->country[$language]);
+}
+}
 $id = parent::save();
 return $id;
 }

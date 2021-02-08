@@ -28,9 +28,7 @@ class IsoImportScript extends AbstractConsoleScript
     public function run()
     {
 
-
-
-        (new IsoInstall())->install();
+        //(new IsoInstall())->install();
 
         (new CountryImport())->importCountry();
 
