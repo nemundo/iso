@@ -8,7 +8,7 @@ use Nemundo\Iso\Content\Country\CountryContentType;
 use Nemundo\Iso\Data\IsoModelCollection;
 use Nemundo\Iso\Script\IsoImportScript;
 use Nemundo\Model\Setup\ModelCollectionSetup;
-use Nemundo\Project\Install\AbstractUninstall;
+use Nemundo\App\Application\Type\Install\AbstractUninstall;
 
 class IsoUninstall extends AbstractUninstall
 {

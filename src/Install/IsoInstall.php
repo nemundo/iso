@@ -12,7 +12,7 @@ use Nemundo\Iso\Data\IsoModelCollection;
 use Nemundo\Iso\Job\IsoImportJob;
 use Nemundo\Iso\Script\IsoImportScript;
 use Nemundo\Model\Setup\ModelCollectionSetup;
-use Nemundo\Project\Install\AbstractInstall;
+use Nemundo\App\Application\Type\Install\AbstractInstall;
 
 class IsoInstall extends AbstractInstall
 {
